@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+   <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h6></h><img src="logo.jpg"></h6>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer,</p>
+                <h1><marquee> name is <samp>VAISHNAVEE PAWAR</samp></marquee></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <br><img src="vaishu.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>work in challenging environment to constantly learn,contribute and grow along with organial;
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        
+                                            </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>C,C++</span></li>
+                            <li><span>Java</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>MYSQL</span></li><br>
+                        </ul>
+                    </div>
+                     <div class="tab-content" id="Education">
+                        <ul>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <li><span>BCS(Entire) Graduation(2023)</span>
+                                <br>Yashwantrao Chavan College 
+                                Of Science Karad<br>
+                                percentage:- 80.04%
+                            </li>
+                            <li><span>HSC(2020)</span> <br>
+                                 YCCS SATARA</Y>:- 61.20%
+                            </li>
+                            <li><span>SSC(2018)</span>
+                                <br>YCCS SATARA:- 82.40%
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Certificate">
+                        <ul>
+                           <br> <p class="tab-links" onclick="opentab('certificate')">Certificate</p><br>
+
+                            <li><span>MS-CIT</span>
+                                <br>Maharstra State Board   
+                                Certificate in Information Technology(MS-CIT) with 88%
+                                
+                            </li>
+                            <li><span>Elementry and Intermediate</span>
+                                <br>Government Of Maharstra Drawing Grade Elementry and Intermediate 
+                                Examination
+                                
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>vaishupawar69@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 97666 66204</p>
+                    <a href="Profile resume.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <div class="copyright">
+                <p>copyright @ 2024 designed by vaishus fas fa-heart"></i></p>
+            </div>
+            <div class="s-icon">
+                <img src="Instagram.jpg">
+                <img src="Linkdin.png">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var tablinks = documents.getElementsByClassName("tab-links");
+        var tabcontents = documents.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontents.classList.remove(active-tab)
+            }
+            event.currentTarget.classList.add("active-link");
+            documents.getElementsById(tabname).classList.add(active-tab);
+        }
+    </script>
+   </body>
+</html>
